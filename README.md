@@ -8,7 +8,7 @@ Implementation of green light red light of squid game in unity.
 ✔️ Movement detection.\
 ✔️ Multiple modifiable parameters from the element inspector.
 
-## Preview
+## Previews
 
 <p align="center">
   <kbd>
