@@ -17,3 +17,6 @@ Implementation of green light red light of squid game in unity.
     <img src="https://i.ibb.co/gyr0yzX/3.png"></img>
   </kbd>
 </p>
+
+## Video Demo
+https://www.youtube.com/watch?v=kpgdbhBICA0
