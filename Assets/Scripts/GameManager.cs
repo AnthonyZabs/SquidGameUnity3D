@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
 
     private void HeadTime(float secs)
     {
-        if (secs <= 0)
+        if (timeValue <= 0)
         {
             headTimeFinish = true;
             RotHead(180);
