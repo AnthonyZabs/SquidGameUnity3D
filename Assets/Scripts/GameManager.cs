@@ -28,9 +28,19 @@ public class GameManager : MonoBehaviour
     public static bool headTime;
     public static bool headTimeFinish;
 
+    [SerializeField]
+    private int totalBots;
+
+    [SerializeField]
+    GameObject Bot;
+
+    [SerializeField]
+    Transform SpawnArea;
+
     // Start is called before the first frame update
     void Start()
     {
+        SpawnBots();
         headTime = false;
         timeValue = minutes * 60;
     }
@@ -39,6 +49,23 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CountDown();
+    }
+
+    private void SpawnBots()
+    {
+        for (int i = 0; i < totalBots; i++)
+            Instantiate(Bot, RandomPosition(), SpawnArea.rotation);
+    }
+
+    private Vector3 RandomPosition()
+    {
+        Vector3 origin = SpawnArea.position;
+        Vector3 range = SpawnArea.localScale / 2.0f;
+        Vector3 randomRange = new Vector3(Random.Range(-range.x, range.x),
+                                          Random.Range(-range.y, range.y),
+                                          Random.Range(-range.z, range.z));
+        Vector3 randomCoordinate = origin + randomRange;
+        return randomCoordinate;
     }
 
     private void CountDown()

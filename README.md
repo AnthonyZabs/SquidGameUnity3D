@@ -7,6 +7,7 @@ Implementation of green light red light of squid game in unity.
 ✔️ Simple player controls.\
 ✔️ Movement detection.\
 ✔️ Multiple modifiable parameters from the element inspector.
+✔️ Bots with AI.
 
 ## Previews
 
